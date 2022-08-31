@@ -72,7 +72,7 @@ export default {
                 filter: '',
                 order: ''
             };
-            let url = 'http://localhost:8081/api/leads?';
+            let url = 'https://api-amo.herokuapp.com/api/leads?';
             for (let i in params) {
                 if (i != 'page') {
                     url += `&${i}=${params[i]}`;
