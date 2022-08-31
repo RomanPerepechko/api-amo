@@ -1,0 +1,53 @@
+.main-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__input-container{
+        margin-left: auto;
+        margin-right: 5%;
+        margin-top: 32px;
+        width: 200px;
+        height: 80px;
+    }
+
+    &__contacts {
+        height: 0px;
+        overflow: hidden;
+
+        &.respond {
+            height: auto;
+        }
+    }
+
+    &__contact {
+        margin-left: 64px;
+        margin-top: 8px;
+    }
+
+    button {
+        margin-right: 16px;
+    }
+
+    &__table-container {
+        width: 90%;
+    }
+
+    &__loader-mask {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 90%;
+        height: auto;
+        position: fixed;
+        left: 5%;
+        right: 0;
+        top: 160px;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+}
